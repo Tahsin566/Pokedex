@@ -19,7 +19,7 @@ const Home = () => {
     const [text, settext] = useState('')
     const [debouncedtext, setdebouncedtext] = useState('')
 
-    useDebounce(() => setdebouncedtext(text), 5000, [text])
+    useDebounce(() => setdebouncedtext(text), 600, [text])
 
 
     const options = {
